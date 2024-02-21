@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3390ff;
+  --secondary-color: #689bca;
+  --background-color: #040404;
+}
+.section {
+  @apply py-14 md:py-20 lg:py-28;
+}
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
+}
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+}
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+}
+h4 {
+  @apply text-xl md:text-2xl lg:text-3xl font-bold;
+}
+h5 {
+  @apply text-lg md:text-xl lg:text-2xl font-bold;
+}
+h6 {
+  @apply text-base md:text-lg lg:text-xl font-bold;
+}
+li {
+  @apply cursor-pointer font-semibold hover:text-secondary-color transition-colors duration-500;
+}
+.hero-section {
+  @apply bg-[linear-gradient(to_bottom,rgba(0,0,0,1),transparent),url("/hero.jpg")] object-cover bg-no-repeat h-[50vh] lg:h-[90vh] w-full bg-bottom;
+}
+/* Button Style Starts */
+.primary-button {
+  @apply text-white bg-[#d30b0d] hover:bg-[#428bca] justify-center items-center text-lg leading-7 relative transition-[background-color] duration-[0.5s] ease-[ease-out] px-5 py-2.5 rounded-sm;
+}
+.button-text-wrapper {
+  @apply h-7 whitespace-nowrap overflow-hidden;
+}
+.default-text {
+  @apply transition-transform duration-[0.3s] ease-[ease];
+}
+.hover-text {
+  @apply transition-transform duration-[0.3s] ease-[ease];
+}
+.primary-button:hover .default-text {
+  @apply -translate-y-full;
+}
+.primary-button:hover .hover-text {
+  @apply -translate-y-full;
+}
+/* Button Style Ends */
