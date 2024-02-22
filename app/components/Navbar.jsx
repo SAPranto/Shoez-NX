@@ -43,24 +43,20 @@ const Navbar = () => {
 
   return (
     <>
-      <section className="top-notice-bar">
-        <div className="container notice-bar">
+      <section className="hidden lg:block uppercase bg-white py-3 border-b-[#ebeeee] border-b border-solid">
+        <div className="container horizontal">
           <div className="horizontal gap-4">
             <div className="horizontal gap-1">
-            <FaMailBulk className="icon" />
-              <span className="text-xs">
-                sa.pranto16@gmail.com
-              </span>
+              <FaMailBulk className="icon" />
+              <span className="text-xs uppercase">sa.pranto16@gmail.com</span>
             </div>
             <div className="horizontal gap-1">
-            <GiSmartphone className="icon" />
-              <span className="text-xs">
-                01631327542
-              </span>
+              <GiSmartphone className="icon" />
+              <span className="text-xs uppercase">01631327542</span>
             </div>
           </div>
           <div className="text-xs">
-            UP TO 40% OFF BEST-SELLING FURNITURE.{" "}
+            UP TO 40% OFF ON SHOES.{" "}
             <Link href="#" className="custom-link">
               SHOP NOW
             </Link>
@@ -68,7 +64,7 @@ const Navbar = () => {
         </div>
       </section>
       <nav
-        className={`mt-5 py-5 w-full transition-all duration-300 ease sticky top-0 ${
+        className={`py-5 w-full transition-all duration-300 ease sticky top-0 ${
           sticky ? "bg-black lg:text-white" : ""
         } ${navMove ? "lg:-translate-y-full" : "lg:-translate-y-0"}`}
       >

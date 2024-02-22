@@ -71,12 +71,6 @@ li {
   consider using classes instead of the `@apply` directive
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
-.top-notice-bar {
-  @apply z-[101] bg-white py-3 border-b-[#ebeeee] border-b border-solid;
-}
-.container.notice-bar {
-  @apply flex-row justify-between flex;
-}
 .custom-link {
   @apply text-[#ff1313] text-xs underline transition-[color] duration-300 hover:text-blue-500;
 }
@@ -84,7 +78,10 @@ li {
   @apply text-[#292f36];
 }
 .horizontal {
-  @apply flex justify-between items-center;
+  @apply flex justify-between gap-2 items-center flex-wrap ;
+}
+.vertical {
+  @apply flex flex-col justify-between items-center gap-2;
 }
 .icon {
   @apply text-[#ff1818];

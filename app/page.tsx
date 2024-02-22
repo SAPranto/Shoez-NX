@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <div className="container">
-      <h1>Heading</h1>
-    </div>
+      <div className="container">
+        <div className="h-[400vh]"></div>
+      </div>
     </>
   );
 }
