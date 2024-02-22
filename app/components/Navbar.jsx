@@ -46,24 +46,24 @@ const Navbar = () => {
       <section className="top-notice-bar">
         <div className="container notice-bar">
           <div className="horizontal gap-4">
-            <div className="horizontal gap-2">
+            <div className="horizontal gap-1">
             <FaMailBulk className="icon" />
-              <div className="text-xs uppercase">
-                This is some text inside of a div block.
-              </div>
+              <span className="text-xs">
+                sa.pranto16@gmail.com
+              </span>
             </div>
-            <div className="horizontal gap-2">
+            <div className="horizontal gap-1">
             <GiSmartphone className="icon" />
-              <div className="text-xs uppercase">
-                This is some text inside of a div block.
-              </div>
+              <span className="text-xs">
+                01631327542
+              </span>
             </div>
           </div>
-          <div className="text-xs uppercase">
+          <div className="text-xs">
             UP TO 40% OFF BEST-SELLING FURNITURE.{" "}
-            <a href="#" className="custom-link">
+            <Link href="#" className="custom-link">
               SHOP NOW
-            </a>
+            </Link>
           </div>
         </div>
       </section>

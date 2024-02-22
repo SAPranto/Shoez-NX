@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Lora, Merriweather } from "next/font/google";
+import { Lora, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
 const paragraph = Lora({
   weight: ["400", "500", "600", "700"],
-  subsets: ['latin'],
-  variable: '--font-paragraph',
-})
-const heading = Merriweather({
-  weight: ["400", "700"],
-  subsets: ['latin'],
-  variable: '--font-heading',
-})
+  subsets: ["latin"],
+  variable: "--font-paragraph",
+});
+const heading = Chakra_Petch({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",

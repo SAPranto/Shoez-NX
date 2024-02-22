@@ -9,6 +9,8 @@
 }
 * {
   font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 p {
   font-family: var(--font-paragraph);
