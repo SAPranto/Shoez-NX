@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu, GiCancel, GiSmartphone } from "react-icons/gi";
 import { FaMailBulk } from "react-icons/fa";
 import Image from "next/image";
-import Button from "./Button"; // Import the Button component
+import Button from "./Button";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -92,7 +92,7 @@ const Navbar = () => {
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
-              <Button buttonText="User Login" />
+              <Button buttonText="User Login" href="./contact" />
             </ul>
             <GiCancel
               className="absolute top-4 right-4 cursor-pointer lg:hidden"

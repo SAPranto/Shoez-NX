@@ -1,13 +1,12 @@
-import Link from "next/link";
 import React from "react";
 
-const Button = ({ buttonText, href }) => (
-  <Link href={href} className="primary-button">
+const SecondaryButton = ({ buttonText, buttonLink }) => (
+  <button href={buttonLink} className="secondary-button">
     <div className="button-text-wrapper">
       <div className="default-text">{buttonText}</div>
       <div className="hover-text">{buttonText}</div>
     </div>
-  </Link>
+  </button>
 );
 
-export default Button;
+export default SecondaryButton;

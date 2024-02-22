@@ -65,12 +65,16 @@ li {
 .primary-button:hover .hover-text {
   @apply -translate-y-full;
 }
+.secondary-button {
+  @apply text-white bg-green-500 hover:bg-black justify-center items-center text-lg leading-7 relative transition-[background-color] duration-[0.5s] ease-[ease-out] px-5 py-2.5 rounded-sm;
+}
+.secondary-button:hover .default-text {
+  @apply -translate-y-full;
+}
+.secondary-button:hover .hover-text {
+  @apply -translate-y-full;
+}
 /* Button Style Ends */
-/*
-  Based on TailwindCSS recommendations,
-  consider using classes instead of the `@apply` directive
-  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
-*/
 .custom-link {
   @apply text-[#ff1313] text-xs underline transition-[color] duration-300 hover:text-blue-500;
 }
@@ -78,7 +82,7 @@ li {
   @apply text-[#292f36];
 }
 .horizontal {
-  @apply flex justify-between gap-2 items-center flex-wrap ;
+  @apply flex justify-between gap-2 items-center flex-wrap;
 }
 .vertical {
   @apply flex flex-col justify-between items-center gap-2;

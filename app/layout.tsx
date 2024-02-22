@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lora, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const paragraph = Lora({
   weight: ["400", "500", "600", "700"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${paragraph.variable} ${heading.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
