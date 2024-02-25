@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu, GiCancel, GiSmartphone } from "react-icons/gi";
 import { FaMailBulk } from "react-icons/fa";
+import { BiSearchAlt, BiCart, BiHeart, BiUser } from "react-icons/bi";
 import Image from "next/image";
-import Button from "./Button";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
       </section>
       <nav
-        className={`py-5 w-full transition-all duration-300 ease sticky top-0 ${
+        className={`py-5 z-50 w-full transition-all duration-300 ease sticky top-0 ${
           sticky ? "bg-black lg:text-white" : ""
         } ${navMove ? "lg:-translate-y-full" : "lg:-translate-y-0"}`}
       >
@@ -87,22 +87,31 @@ const Navbar = () => {
                 <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/">Career</Link>
+                <Link href="/products">Products</Link>
               </li>
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
-              <Button buttonText="User Login" href="./contact" />
             </ul>
             <GiCancel
               className="absolute top-4 right-4 cursor-pointer lg:hidden"
               onClick={onNavClick}
             />
           </div>
-          <GiHamburgerMenu
-            className={`cursor-pointer lg:hidden ${sticky ? "text-white" : ""}`}
-            onClick={onNavClick}
-          />
+          <div
+            className={`flex justify-start gap-3 ${sticky ? "text-white" : ""}`}
+          >
+            <BiSearchAlt className="cursor-pointer"></BiSearchAlt>
+            <BiCart className="cursor-pointer"></BiCart>
+            <BiHeart className="cursor-pointer"></BiHeart>
+            <BiUser className="cursor-pointer"></BiUser>
+            <GiHamburgerMenu
+              className={`cursor-pointer ms-4 lg:hidden ${
+                sticky ? "text-white" : ""
+              }`}
+              onClick={onNavClick}
+            />
+          </div>
         </div>
       </nav>
     </>

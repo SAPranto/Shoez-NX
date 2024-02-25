@@ -3,36 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #3390ff;
+  --primary-color: #d30b0d;
   --secondary-color: #689bca;
-  --background-color: #040404;
+  --background-color: #ffffff;
+  --heading-color: #040404;
+  --paragraph-color: #666666;
+  --border-color: #e0e0e0;
 }
 * {
   font-family: var(--font-heading);
   font-weight: 600;
   letter-spacing: 0.5px;
 }
+body {
+  background-color: white;
+}
 p {
   font-family: var(--font-paragraph);
   font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--paragraph-color);
+}
+a {
+  @apply cursor-pointer;
 }
 h1 {
-  @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
+  @apply text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 text-heading-color;
 }
 h2 {
-  @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  @apply text-4xl lg:text-5xl font-bold mb-3 text-heading-color;
 }
 h3 {
-  @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  @apply text-3xl lg:text-4xl font-bold mb-3 text-heading-color;
 }
 h4 {
-  @apply text-xl md:text-2xl lg:text-3xl font-bold;
+  @apply text-2xl lg:text-3xl font-bold mb-3 text-heading-color;
 }
 h5 {
-  @apply text-lg md:text-xl lg:text-2xl font-bold;
+  @apply text-xl lg:text-2xl font-bold mb-3 text-heading-color;
 }
 h6 {
-  @apply text-base md:text-lg lg:text-xl font-bold;
+  @apply text-lg lg:text-xl font-bold mb-3 text-heading-color;
 }
 li {
   @apply cursor-pointer font-semibold hover:text-secondary-color transition-colors duration-500;
@@ -54,10 +65,10 @@ li {
   @apply h-7 whitespace-nowrap overflow-hidden;
 }
 .default-text {
-  @apply transition-transform duration-[0.3s] ease-[ease];
+  @apply transition-transform duration-[0.3s] ease-[ease] text-white;
 }
 .hover-text {
-  @apply transition-transform duration-[0.3s] ease-[ease];
+  @apply transition-transform duration-[0.3s] ease-[ease] text-white;
 }
 .primary-button:hover .default-text {
   @apply -translate-y-full;
@@ -89,4 +100,82 @@ li {
 }
 .icon {
   @apply text-[#ff1818];
+}
+/* Footer Style Ends */
+.footer-menu {
+  @apply text-left border-t border-border-color pt-10 w-full sm:w-auto sm:border-none sm:pt-0;
+}
+
+.heading {
+  @apply text-[#292f36] font-normal my-0;
+}
+.heading.white-on-mobile-device {
+  @apply max-w-[380px] text-[#292f36] tracking-[1px];
+}
+.subscribe-button {
+  @apply w-full text-center tracking-[2.8px] uppercase bg-[#292f36] border text-base leading-[31px] rounded-[3px] border-solid border-[rgba(255,255,255,0)] hover:text-[#292f36] hover:bg-[rgba(255,255,255,0)] hover:border-solid hover:border-[#292f36];
+  transition: color 0.4s, border-color 0.5s ease-out, background-color 0.7s;
+}
+.newsletter-field {
+  @apply bg-[rgba(255,255,255,0)] border mb-[26px] px-0 py-[5px] border-b-[#292f36] border-b border-solid;
+}
+.newsletter-field::-ms-input-placeholder {
+  @apply text-[rgba(41,47,54,0.5)];
+}
+.newsletter-field::placeholder {
+  @apply text-[rgba(41,47,54,0.5)];
+}
+.newsletter-subscription {
+  @apply max-w-[1400px] gap-x-[50px] gap-y-[50px] bg-[#ffe3e3] justify-between flex mx-auto pt-[123px] pb-[138px] px-[94px] rounded-[20px];
+}
+.wrapper {
+  @apply w-full;
+}
+.wrapper.width-436px {
+  @apply max-w-[436px] overflow-hidden;
+}
+.mask {
+  @apply relative overflow-hidden;
+}
+.vertical-wrapper {
+  @apply flex-col flex;
+}
+.vertical-wrapper._10px-gap {
+  @apply gap-x-2.5 gap-y-2.5;
+}
+.newsletter-title {
+  @apply text-[#292f36] tracking-[1px] uppercase;
+}
+@media screen and (max-width: 991px) {
+  .newsletter-subscription {
+    @apply flex-col items-start pr-[46px];
+  }
+  .wrapper.width-436px {
+    @apply max-w-none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .heading.white-on-mobile-device {
+    @apply text-white;
+  }
+  .subscribe-button {
+    @apply text-black bg-white;
+  }
+  .newsletter-field {
+    @apply border-b-[#faf6f1];
+  }
+  .newsletter-field::-ms-input-placeholder {
+    @apply text-[#faf6f1];
+  }
+  .newsletter-field::placeholder {
+    @apply text-[#faf6f1];
+  }
+  .newsletter-title {
+    @apply text-[#faf6f1];
+  }
+}
+@media screen and (max-width: 479px) {
+  .newsletter-subscription {
+    @apply pt-[60px] pb-[70px] px-[25px];
+  }
 }

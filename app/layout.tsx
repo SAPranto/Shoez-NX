@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${paragraph.variable} ${heading.variable}`}>
+      <body className={`${paragraph.variable} ${heading.variable} overflow-x-hidden`}>
         <Navbar />
         {children}
         <Footer />

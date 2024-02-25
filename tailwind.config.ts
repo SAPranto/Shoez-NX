@@ -11,7 +11,10 @@ const config: Config = {
       colors: {
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
-        "background-color": "var(--background-color)"
+        "background-color": "var(--background-color)",
+        "heading-color": "var(--heading-color)",
+        "paragraph-color": "var(--paragraph-color)",
+        "border-color": "var(--border-color)"
       },
       fontFamily: {
         "heading": "var(--font-heading)", // note: you can call the left side of this whatever you want - barlow-bold or title-font or foo-bar, this is what you'll use in your Tailwind css classes to use this font
@@ -21,9 +24,8 @@ const config: Config = {
     container : {
       center : true,
       padding: {
-        DEFAULT: '1rem',
-        md: '1.5rem',
-        lg: '2rem'
+        DEFAULT: '15px',
+        md: '20px'
       }
     }
   },

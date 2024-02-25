@@ -3,10 +3,10 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <footer aria-label="Site Footer" className="bg-white">
-        <div className="mx-auto max-w-screen-xl px-4 pb-6 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 border-gray-100 pt-10 md:grid-cols-4 lg:grid-cols-6">
-            <div className="text-center sm:text-left">
+      <footer className="bg-white mt-20">
+        <div className="container pb-6 sm:px-6">
+          <div className="flex flex-col sm:flex-row justify-between flex-wrap lg:flex-nowrap gap-10 border-gray-100 pt-10">
+            <div className="footer-menu">
               <p className="text-lg font-medium text-gray-900">Our Brands</p>
               <nav aria-label="Footer About Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
@@ -45,48 +45,7 @@ const Footer = () => {
                 </ul>
               </nav>
             </div>
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">
-                Products We Sell
-              </p>
-              <nav aria-label="Footer Services Nav" className="mt-8">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
-                    >
-                      Shoe
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
-                    >
-                      Bags
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
-                    >
-                      Sliders
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
-                    >
-                      Hats
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="text-center sm:text-left">
+            <div className="footer-menu">
               <p className="text-lg font-medium text-gray-900">Our Service</p>
               <nav aria-label="Footer Resources Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
@@ -125,9 +84,9 @@ const Footer = () => {
                 </ul>
               </nav>
             </div>
-            <div className="text-center sm:text-left">
+            <div className="footer-menu">
               <p className="text-lg font-medium text-gray-900">Helpful Links</p>
-              <nav aria-label="Footer Helpful Nav" className="mt-8">
+              <nav aria-label="footer-links" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
@@ -155,29 +114,23 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="group flex justify-center gap-1.5 sm:justify-start"
+                      className="text-gray-700 transition hover:text-gray-700/75"
                       href="/"
                     >
-                      <span className="text-gray-700 transition group-hover:text-gray-700/75">
-                        Live Chat
-                      </span>
-                      <span className="relative -mr-2 flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-500" />
-                      </span>
+                      Products
                     </a>
                   </li>
                 </ul>
               </nav>
             </div>
-            <div className="text-center sm:text-left md:col-span-4 lg:col-span-2">
+            <div className="text-left w-full lg:w-auto border-border-color border-t pt-10 lg:pt-0 lg:border-none">
               <p className="text-lg font-medium text-gray-900">Stay in Touch</p>
-              <div className="mx-auto mt-8 max-w-md sm:ml-0">
-                <p className="text-center leading-relaxed text-gray-500 sm:text-left">
+              <div className="mt-8 max-w-lg ">
+                <p className="text-left text-gray-500">
                   Want to get notify about the latest products?
                 </p>
                 <form className="mt-4">
-                  <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
+                  <div className="flex flex-col gap-4">
                     <label htmlFor="email" className="sr-only">
                       Email
                     </label>
@@ -199,7 +152,7 @@ const Footer = () => {
           </div>
           <div className="mt-16 border-t border-gray-300 pt-6 sm:flex sm:items-center sm:justify-between">
             <p className="text-center text-sm text-gray-500 sm:text-left">
-              Copyright © 2022-2023. All rights reserved by NEXOY.
+              Copyright © 2024. All rights reserved by NEXOY.
             </p>
             <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
               <li>

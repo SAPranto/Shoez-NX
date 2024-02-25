@@ -1,10 +1,9 @@
 import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import "../app.css";
 
-const ProductDetails = () => {
-  return (
-    <div className="relative max-w-screen-xl px-4 py-8 mx-auto">
+const Details = () => {
+  return <div>
+        <div className="max-w-screen-xl px-4 py-8 mx-auto">
       <div className="grid items-start grid-cols-1 gap-8 md:grid-cols-2">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
           <img
@@ -211,7 +210,7 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
-  );
+  </div>;
 };
 
-export default ProductDetails;
+export default Details;
