@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Banner.jsx", "app/components/TitleBlock.jsx", "app/page.jsx", "app/sections/HeroSection.jsx", "app/sections/ProductSection.jsx", "app/sections/FeatureSection.jsx", "app/sections/CtaSection.jsx", "app/sections/BlogSection.jsx", "app/layout.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Banner.jsx", "app/components/TitleBlock.jsx", "app/page.js", "app/sections/HeroSection.jsx", "app/sections/ProductSection.jsx", "app/sections/FeatureSection.jsx", "app/sections/CtaSection.jsx", "app/sections/BlogSection.jsx", "app/layout.js", "app/components/FeatureCard.jsx", "app/components/BlogCard.jsx", "app/components/PricingCard.jsx", "app/components/ProductCard.jsx", "app/components/Statistics.jsx", "app/components/TeamCard.jsx", "app/components/Testimonial.jsx", "app/products/page.jsx", "app/cart/page.jsx", "app/checkout/page.jsx", "app/components/SecondaryButton.jsx", "app/components/Button.jsx", "app/components/Footer.jsx", "app/components/Navbar.jsx", "app/contact/page.jsx", "app/Product/page.jsx", "app/about/page.jsx", "app/products/[productid]/page.jsx"],
   "exclude": ["node_modules"]
 }

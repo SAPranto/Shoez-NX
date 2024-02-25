@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React from "react";
 
-
-
 const Banner = ({ PageTitle }) => {
   return (
     <section className="h-60 lg:h-80 w-full bg-black flex items-center">

@@ -2,7 +2,8 @@ import React from "react";
 
 const CtaSection = () => {
   return (
-    <div className="newsletter-subscription">
+    <div className="container">
+    <div className=" newsletter-subscription">
       <div className="mask">
         <div className="vertical-wrapper _10px-gap">
           <div
@@ -71,6 +72,7 @@ const CtaSection = () => {
           <div>Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
