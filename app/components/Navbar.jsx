@@ -104,7 +104,9 @@ const Navbar = () => {
             <BiSearchAlt className="cursor-pointer"></BiSearchAlt>
             <BiCart className="cursor-pointer"></BiCart>
             <BiHeart className="cursor-pointer"></BiHeart>
-            <BiUser className="cursor-pointer"></BiUser>
+            <Link href='/login'>
+              <BiUser className="cursor-pointer"></BiUser>
+            </Link>
             <GiHamburgerMenu
               className={`cursor-pointer ms-4 lg:hidden ${
                 sticky ? "text-white" : ""
